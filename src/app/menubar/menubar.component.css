@@ -1,0 +1,44 @@
+/* styles.css (lub inny plik ze stylami) */
+.language-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.language-buttons button {
+    margin-left: 8px;
+}
+
+/* Apply dark theme to Angular Material components */
+.mat-toolbar {
+    font-size: large;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    align-items: center;
+    height: 120px;
+    /* Align items vertically in the center */
+}
+
+.toolbar-content {
+    display: flex;
+    justify-content: flex-end;
+    /* Justify all elements to the right */
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+.logo {
+    max-width: 200px;
+    /* Set the maximum width of the logo */
+    max-height: auto;
+    /* Set the maximum height of the logo */
+    width: auto;
+    /* Maintain aspect ratio */
+    height: auto;
+}
+
+.example-spacer {
+    flex: 1;
+    /* Fill available space equally */
+}

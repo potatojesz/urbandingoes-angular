@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background-color: var(--background-color);}
+body { margin: 0; font-family: 'Montserrat', sans-serif; }
+
+/* Define dark theme colors */
+:root {
+    --primary-color: #6200ee; /* Adjust the primary color as needed */
+    --accent-color: #ff4081; /* Adjust the accent color as needed */
+    --warn-color: #f44336; /* Adjust the warn color as needed */
+    --background-color: #1f1e1e; /* Adjust the background color as needed */
+    --text-color: #ffffff; /* Adjust the text color as needed */
+  }

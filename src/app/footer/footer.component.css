@@ -1,0 +1,75 @@
+/* styles.css (lub inny plik ze stylami) */
+.language-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.language-buttons button {
+    margin-left: 8px;
+}
+
+/* Apply dark theme to Angular Material components */
+.mat-toolbar {
+    font-size: large;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(51, 51, 51, 0.1);
+    color: var(--text-color);
+    align-items: center;
+    height: 80px;
+    /* Align items vertically in the center */
+}
+
+.toolbar-content {
+    display: flex;
+    justify-content: flex-end;
+    /* Justify all elements to the right */
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+.logo {
+    max-width: 200px;
+    /* Set the maximum width of the logo */
+    max-height: auto;
+    /* Set the maximum height of the logo */
+    width: auto;
+    /* Maintain aspect ratio */
+    height: auto;
+}
+
+.example-spacer {
+    flex: 1;
+    /* Fill available space equally */
+}
+
+.small-image {
+    max-width: 48px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+
+.facebook-image {
+    max-width: 120px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); /* Kolor tła z przejrzystością */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .footer.show {
+    transform: translateY(100%);
+  }

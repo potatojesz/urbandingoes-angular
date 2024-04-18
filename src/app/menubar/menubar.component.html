@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <img src="..\..\assets\logo\logo_svg_white.svg" class="logo" alt="Logo">
+    <span class="example-spacer"></span>
+    <button mat-button routerLink="/">{{ 'events' | translate }}</button>
+    <button mat-button routerLink="/about">{{ 'about' | translate }}</button>
+    <button mat-button routerLink="/contact">{{ 'contact' | translate }}</button>
+
+    <span class="example-spacer"></span>
+
+    <button mat-button routerLink="/special">{{ 'special' | translate }}</button>
+
+    <span class="example-spacer"></span>
+
+    <div class="flags">
+        <!-- Single button for language toggle -->
+        <button mat-icon-button (click)="toggleLanguage()">
+            <img [src]="currentLanguage === 'pl' ? 'http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg' : 'http://purecatamphetamine.github.io/country-flag-icons/3x2/PL.svg'"
+                alt="Language Flag">
+        </button>
+    </div>
+</mat-toolbar>
